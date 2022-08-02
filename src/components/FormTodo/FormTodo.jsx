@@ -12,17 +12,27 @@ const FormTodo = ({ state, onChange, children }) => {
       <input
         type="text"
         name="activity"
-        placeholder=""
+        placeholder="Inserire un'attività ♪"
         onChange={handleChange}
       />
       {/* activity */}
       <br />
       <label>Giorno:</label>
-      <input type="text" name="date" placeholder="" onChange={handleChange} />
+      <input
+        type="date"
+        className="date__input"
+        name="date"
+        onChange={handleChange}
+      />
       {/* date */}
       <br />
       <label>Ora:</label>
-      <input type="text" name="time" placeholder="" onChange={handleChange} />
+      <input
+        type="time"
+        className="time__input"
+        name="time"
+        onChange={handleChange}
+      />
       {/* time */}
       <br />
 

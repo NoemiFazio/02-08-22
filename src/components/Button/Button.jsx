@@ -2,9 +2,11 @@ import "./index.css";
 
 const Button = ({ onClick, children }) => {
   return (
-    <button className="btn" onClick={onClick}>
-      {children}
-    </button>
+    <div className="Button">
+      <button className="btn" onClick={onClick}>
+        {children}
+      </button>
+    </div>
   );
 };
 
